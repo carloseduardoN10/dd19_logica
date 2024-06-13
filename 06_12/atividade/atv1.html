@@ -1,0 +1,44 @@
+<html>
+
+
+<head>
+
+        <title>Atividade1</title>
+
+        <script>
+        
+        var media;
+        var nota;
+        var notatotal = 0;
+
+        for (let i = 0; i < 4; i++) {
+            nota = window.prompt("digite sua nota: ")
+            nota = Number(nota)
+
+            notatotal = notatotal + nota
+                     
+        }
+        media = notatotal / 4
+        console.log("a media do aluno é: ",media);
+
+        if (media >= 7) {
+             console.log("Aluno aprvado");
+        } 
+         
+        else if(media >= 5 && media<7) {
+            console.log("Recuperação")
+        
+         }
+         else {
+            console.log("Reprovado");
+        }
+
+    
+
+        </script>
+        
+
+</head>
+
+
+</html>
