@@ -2,23 +2,33 @@
 
 <head>
 
-    <title>Array MAIOReMENOR</title>
+    <title>Atividade10</title>
 
     <script>
     
-    let arr=[]
 
-    for (let c=0;c<10;c++){
+    var numeros = [];
+    for (var i = 0; i < 10; i++) {
+    var numero = parseInt(prompt("Digite um número inteiro:"));
+    numeros.push(numero);
+    }   
+
+    var maior = numeros[0];
+    var menor = numeros[0];
     
-    arr.push(Number(prompt("Digite um número: ")))
-    arr.sort()
+    for (var i = 1; i < numeros.length; i++) {
+    if (numeros[i] > maior) {
+        maior = numeros[i];
     }
+        if (numeros[i] < menor) {
+        menor = numeros[i];
+        }
+    }
+
+
+    console.log("O maior número é: " + maior);
     
-    console.log(arr)
-    
-    console.log("O menor número é: "+arr[0])
-    
-    console.log("O maior número é: "+arr[1])
+    console.log("O menor número é: " + menor);
 
     
         
